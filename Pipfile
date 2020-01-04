@@ -12,4 +12,4 @@ autopep8 = "*"
 python_version = "3.7"
 
 [scripts]
-format = "autopep8 -ivr ."
+format = "autopep8 -airvv ."
