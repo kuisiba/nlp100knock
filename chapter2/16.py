@@ -30,8 +30,7 @@ for i in range(len(arr)):
         splitted[offset + (i - ooi_all_line) // sukunai_line] += '\n'
 
 for i in range(len(splitted)):
-    path = './chapter2/' + str(i)
-    print(path)
+    path = './chapter2/16_' + str(i)
     f = open(path, mode='w')
     f.write(splitted[i])
     f.close()
