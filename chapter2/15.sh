@@ -1,3 +1,3 @@
 #! /bin/sh
 
-tail -n 3 chapter2/hightemp.txt
+tail -n $1 chapter2/hightemp.txt

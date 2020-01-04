@@ -1,3 +1,3 @@
 #! /bin/sh
 
-head -n 3 chapter2/hightemp.txt
+head -n $1 chapter2/hightemp.txt
