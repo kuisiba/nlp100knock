@@ -1,7 +1,7 @@
 def ngram(s, n):
     arr = []
     for i in range(len(s) - n + 1):
-        arr.append(s[i:i+n])
+        arr.append(s[i:i + n])
     return arr
 
 
