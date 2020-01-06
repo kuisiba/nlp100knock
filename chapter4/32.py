@@ -9,7 +9,9 @@ f.close()
 
 arr = []
 for i in range(len(neko)):
-    matched = re.match(r'(.*)\t(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*)', neko[i])
+    matched = re.match(
+        r'(.*)\t(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*)',
+        neko[i])
     sentence = {}
     if matched:
         sentence['surface'] = matched.group(1)
@@ -17,7 +19,7 @@ for i in range(len(neko)):
         sentence['pos'] = matched.group(2)
         sentence['pos1'] = matched.group(3)
     if '動詞' in sentence.values():
-        #arr.append(sentence['base'])
+        # arr.append(sentence['base'])
         arr.append(sentence['base'])
 
 for i in arr:

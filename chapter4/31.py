@@ -9,7 +9,9 @@ f.close()
 
 arr = []
 for i in range(len(neko)):
-    matched = re.match(r'(.*)\t(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*)', neko[i])
+    matched = re.match(
+        r'(.*)\t(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*),(.*)',
+        neko[i])
     sentence = {}
     if matched:
         sentence['surface'] = matched.group(1)
