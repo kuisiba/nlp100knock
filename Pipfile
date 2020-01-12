@@ -11,6 +11,7 @@ requests = "*"
 mecab-python3 = "*"
 matplotlib = "*"
 nltk = "*"
+stanford-corenlp = "*"
 
 [requires]
 python_version = "3.7"
